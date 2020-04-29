@@ -9,6 +9,4 @@ const api = {
     }
 };
 
-module.exports = {
-  apiCalls: api
-};
+module.exports = api;
