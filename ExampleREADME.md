@@ -26,28 +26,28 @@
   
   ### Steps required to install project and how to get the development environment running:
   
-  Installation
+  Installation N/A
   
   
   ## Usage 
   
   ### Instructions and examples for use:
   
-  Usage
+  Usage N/A
   
   
   ## Contributing
   
   ### If you would like to contribute it, you can follow these guidelines for how to do so.
   
-  Contributing
+  Contributing N/A
   
 
   ## Tests
   
   ### Tests for application and how to run them:
   
-  Tests 
+  Tests N/A 
 
   ## License
   

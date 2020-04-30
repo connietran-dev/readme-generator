@@ -13,7 +13,7 @@ const questions = [
         default: 'connietran-dev',
         validate: function (answer) {
             if (answer.length < 1) {
-                return console.log("Please enter a valid GitHub username.");
+                return console.log("A valid GitHub username is required.");
             }
             return true;
         }
@@ -25,7 +25,7 @@ const questions = [
         default: 'Title',
         validate: function (answer) {
             if (answer.length < 1) {
-                return console.log("Please enter a valid project description.");
+                return console.log("A valid project title is required.");
             }
             return true;
         }
@@ -37,34 +37,34 @@ const questions = [
         default: 'Description',
         validate: function (answer) {
             if (answer.length < 1) {
-                return console.log("Please enter a valid project description.");
+                return console.log("A valid project description is required.");
             }
             return true;
         }
     },
     {
         type: 'input',
-        message: "Describe the steps required to install your project for the Installation section.",
+        message: "If applicable, describe the steps required to install your project for the Installation section.",
         name: 'installation',
-        default: 'Installation'
+        default: 'Installation N/A'
     },
     {
         type: 'input',
         message: "Provide instructions and examples of your project in use for the Usage section.",
         name: 'usage',
-        default: 'Usage'
+        default: 'Usage N/A'
     },
     {
         type: 'input',
         message: "If applicable, provide guidelines on how other developers can contribute to your project.",
         name: 'contributing',
-        default: 'Contributing'
+        default: 'Contributing N/A'
     },
     {
         type: 'input',
         message: "If applicable, provide any tests written for your application and provide examples on how to run them.",
         name: 'tests',
-        default: 'Tests'
+        default: 'Tests N/A'
     },
     {
         type: 'list',
@@ -87,19 +87,26 @@ function writeToFile(fileName, data) {
 const writeFileAsync = util.promisify(writeToFile);
 
 async function init() {
-    const userResponses = await inquirer.prompt(questions);
+    try {
 
-    console.log("Your responses: ", userResponses);
-    console.log("Thank you for your responses! Fetching your GitHub data next...");
+        const userResponses = await inquirer.prompt(questions);
+        console.log("Your responses: ", userResponses);
+        console.log("Thank you for your responses! Fetching your GitHub data next...");
+    
+        // Call GitHub api for user info
+        const userInfo = await api.getUser(userResponses);
+        console.log("Your GitHub user info: ", userInfo);
+    
+        // Pass Inquirer userResponses and GitHub userInfo to generateMarkdown
+        const markdown = generateMarkdown(userResponses, userInfo);
+        console.log(markdown);
+    
+        // Write markdown to file
+        await writeFileAsync('ExampleREADME.md', markdown);
 
-    const userInfo = await api.getUser(userResponses);
-    console.log("userInfo: ", userInfo);
-
-    const markdown = await generateMarkdown(userResponses, userInfo);
-    console.log(markdown);
-
-    await writeFileAsync('ExampleREADME.md', markdown);
-
-}
+    } catch (error) {
+        console.log(error);
+    }
+};
 
 init();
