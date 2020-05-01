@@ -6,7 +6,7 @@ const api = {
         // Sample URL: https://api.github.com/users/connietran-dev
         .get(`https://api.github.com/users/${userResponses.username}`, {
           headers: {
-            authorization: `token c0ab849fc0166ff196c493291f560a5be5eb385c`
+            authorization: `token 6797cbe26c3fc74c731752cd8f9bee60959e8b2a`
           }
         });
         return response.data;
