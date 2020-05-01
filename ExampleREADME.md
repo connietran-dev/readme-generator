@@ -1,67 +1,56 @@
+# Project Title
 
-  # Title
-
-  ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+  ![GitHub badge](https://img.shields.io/github/languages/top/connietran-dev/readme-generator)
   
   Check out the badges hosted by [shields.io](https://shields.io/).
   
   
   ## Description 
   
-  ### The what, why, and how: 
+  *The what, why, and how:* 
   
-  Description
-  
-  
-  ## Table of Contents
+  Project Description
 
+  ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [License](#license)
   
-  
   ## Installation
   
-  ### Steps required to install project and how to get the development environment running:
+  *Steps required to install project and how to get the development environment running:*
   
-  Installation N/A
-  
+  Installation section
   
   ## Usage 
   
-  ### Instructions and examples for use:
+  *Instructions and examples for use:*
   
-  Usage N/A
+  Usage
   
-  
-  ## Contributing
-  
-  ### If you would like to contribute it, you can follow these guidelines for how to do so.
-  
-  Contributing N/A
-  
-
   ## Tests
   
-  ### Tests for application and how to run them:
+  *Tests for application and how to run them:*
   
-  Tests N/A 
-
+  Tests
+  
   ## License
   
-  GNU AGPLv3
-
+  MIT License
+  
   ---
   
-  ## About @connietran-dev
+  ## Questions?
   
   ![Developer Profile Picture](https://avatars3.githubusercontent.com/u/61371242?v=4) 
   
+  For any questions, please contact me with the information below:
  
   GitHub: [@connietran-dev](https://api.github.com/users/connietran-dev)
+  
 
-  Email: null
+  Email: connietrandev@gmail.com
 
   
