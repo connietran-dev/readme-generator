@@ -12,33 +12,11 @@
   Project Description
 
   ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
   * [License](#license)
-  
-  ## Installation
-  
-  *Steps required to install project and how to get the development environment running:*
-  
-  Installation Section
-  
-  ## Usage 
-  
-  *Instructions and examples for use:*
-  
-  Usage Section
-  
-  ## Tests
-  
-  *Tests for application and how to run them:*
-  
-  Tests
   
   ## License
   
-  GNU AGPLv3
+  MIT License
   
   ---
   
@@ -49,8 +27,4 @@
   For any questions, please contact me with the information below:
  
   GitHub: [@connietran-dev](https://api.github.com/users/connietran-dev)
-  
-
-  Email: connietrandev@gmail.com
-
   

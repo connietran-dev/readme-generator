@@ -1,105 +1,64 @@
-# Unit 09 Node.js and ES6+ Homework: Good README Generator
+# Node.js and ES6+: README.md Generator
 
-Create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
+## Description 
+  
+*The what, why, and how:* 
+  
+For any good project, it is important to have a quality README with information about the app - what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. 
 
-```sh
-node index.js
-```
+This is a command-line application that runs with NodeJS that dynamically generates a README.md based on your input about your project. Check out `ExampleREADME.md` in this repo as an example. 
 
-The user will be prompted for their GitHub username, which will be used to make a call to the GitHub API to retrieve their email and profile image. They will then be prompted with questions about their project.
 
-The README will be populated with the following:
+## Table of Contents
+* [Usage](#usage)
+* [Installation](#installation)
+* [License](#license)
+  
+## Usage 
 
-* At least one badge
-* Project title
-* Description
-* Table of Contents
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
-  * User GitHub profile picture
-  * User GitHub email
+*Instructions and examples for use:*
 
-Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
+(GIF HERE)
 
-```
-AS A developer
+When you run `node index.js` the application uses the `inquirer` package to prompt you in the command line with a series of questions about your GitHub and about your project.
 
-I WANT a README generator
+The application then takes your responses and uses `axios` to fetch your GitHub profile from the GitHub API, including your GitHub profile picture (avatar) and email.
 
-SO THAT I can easily put together a good README for a new project
-```
+From there, the application will generate markdown conditionally based on your responses to the Inquirer prompts. The README will also include badges for your GitHub repo.
 
-Refer to the [Good README guide](../../01-HTML-Git-CSS/04-Supplemental/Good-README-Guide/README.md).
+Finally, `fs.writeFile` is used to generate your project's README.md file.
 
-## Business Context
+The application separates the GitHub API call and generation of the markdown into separate modules: `api.js` and `generateMarkdown.js` inside the `utils` folder, respectively.
 
-When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
+The application also utilizes as much as possible, syntax and paradigms introduced in ES6 and beyond, including `arrow functions`, `const`, `let`, template literals, and `async/await` to handle the `inquirer`, `axios`, and `fs.writeFile` promises.
 
-## Minimum Requirements
+Check out `ExampleREADME.md` in this repo as an example. 
 
-* Functional, deployed application.
 
-* GitHub repository with a unique name and a README describing project.
+## Installation
 
-* The generated README includes a bio image from the user's GitHub profile.
+*Steps required to install project and how to get the development environment running:*
 
-* The generated README includes the user's email.
+To generate your own README, first run `npm install` in order to install the following npm package dependencies as specified in the `package.json`:
+  * [`inquirer`](https://www.npmjs.com/package/inquirer) that will prompt you for your inputs from the command-line 
+  * [`axios`](https://www.npmjs.com/package/axios) to fetch your info from GitHub
 
-* The generated README includes the following sections: 
-  * Title
-  * Description
-  * Table of Contents
-  * Installation
-  * Usage
-  * License
-  * Contributing
-  * Tests
-  * Questions
+The application itself can be invoked with `node index.js`
 
-* The generated README includes 1 badge that's specific to the repository.
 
-```
-GIVEN the developer has a GitHub profile and a repository
+## License
 
-WHEN prompted for the developer's GitHub username and repo specific information
+MIT License
 
-THEN a README for the repo is generated
-```
-- - -
+---
 
-## Commit Early and Often
+## Questions?
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+![Developer Profile Picture](https://avatars3.githubusercontent.com/u/61371242?v=4) 
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+For any questions, please contact me via the information below:
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+GitHub: [@connietran-dev](https://api.github.com/users/connietran-dev)
 
-Follow these guidelines for committing:
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have more than 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* An animated GIF demonstrating the app functionality
-
-* A generated README.md file for a project repo.
-
-* The URL of the GitHub repository
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+Email: connietrandev@gmail.com
