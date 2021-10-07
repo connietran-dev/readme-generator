@@ -1,4 +1,4 @@
-# README.md File Generator Project
+# README File Generator Project
 
   ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/connietran-dev/readme-generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/connietran-dev/readme-generator?style=flat&logo=appveyor)
   
@@ -28,17 +28,23 @@
   
   *Instructions and examples for use:*
   
-  This is the Usage section. Unprecedented challenge human-centered peaceful, design thinking; greenwashing problem-solvers innovate effective altruism. Resilient co-creation resist innovate, a; paradigm. Change-makers global social return on investment contextualize improve the world.
+  This is the Usage section. Unprecedented challenge human-centered peaceful, design thinking; greenwashing problem-solvers innovate effective altruism. Resilient co-creation resist innovate, paradigm. Change-makers global social return on investment contextualize improve the world.
+  
+  ## Contributing
+  
+  *If you would like to contribute it, you can follow these guidelines for how to do so.*
+  
+  Tell us about how other developers can contribute to your project.  Then collective impact, movements scale and impact move the needle green space improve the world social innovation strategize. Venture philanthropy social enterprise youth; peaceful compassion equal opportunity and global storytelling bandwidth expose the truth.
   
   ## Tests
   
   *Tests for application and how to run them:*
   
-  Here's where you can write about any tests you've used in your project. Cultivate program area co-create; program areas; indicators relief social impact. Thought partnership leverage change-makers scale and impact improve the world corporate social responsibility segmentation the revolutionary. Communities to, greenwashing move the needle commitment systems thinking circular; contextualize equal.
+  Here's where you can write about any tests you've used in your project. Cultivate program area co-create; program areas; indicators relief social impact. Thought partnership leverage change-makers scale and impact improve the world corporate social responsibility segmentation the revolutionary.
   
   ## License
   
-  Boost Software License 1.0
+  Mozilla Public License 2.0
   
   ---
   
