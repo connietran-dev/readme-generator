@@ -112,8 +112,8 @@ function generateMarkdown(userResponses, userInfo) {
   ---
   
   ## Questions?
-  
-  ![Developer Profile Picture](${userInfo.avatar_url}) 
+
+  <img src="${userInfo.avatar_url}" alt="${userInfo.login}" width="40%" />
   
   For any questions, please contact me with the information below:
  
