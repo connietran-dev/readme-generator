@@ -9,7 +9,7 @@
   "author": "Connie Tran",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "inquirer": "^6.3.1"
   }
 }
